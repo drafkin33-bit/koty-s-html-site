@@ -101,3 +101,9 @@ article ul li {
         opacity: 0;
     }
 }
+
+.temp-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
