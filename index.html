@@ -1,50 +1,103 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="The official professional and academic resume for Dakota Moreno.">
-        <meta name="application-name" content="Dakota Moreno Resume">
-        
-        <title>Dakota Moreno Resume</title>
-        <link rel="stylesheet" href="css/styles.css">
+* {
+    margin: 3px;
+    padding: 1px;
+}
+:root {
+    --color1: #F2EAE7;
+    --color2: #B7735A;
+    --color3: #5D7B71;
+    --color4: #478B74;
+    --color5: #172822;
+}
 
-    </head>
+a {
+    transition: color 0.3s ease;
+}
 
-    <body>
-    
-        <header>
-            <h1>Dakota Moreno</h1>
-            <p>Daytona Beach, Florida | 954-993-2814| dakota.moreno@gmail.com</p>
-        </header>
+a:hover {
+    color: var(--color2);
+}
 
-        <nav>
-            <a href="coverletter.html">Cover Letter</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="careergoals.html">Career Goals</a> |
-        </nav>
-        
-        <main>
-            <section>
-                <h2>PROFESSIONAL SUMMARY</h2>
-                
-            </section>
+ul {
+    font-size: 14px;
+    padding-left: 10px;
+    list-style-type: square;
+}
 
-            <section>
-                <h2>EDUCATION</h2>
-                <article>
-                    <h3>Western Governors University</h3>
-                    <p><b>Bachelor of Science in Computer Science</b> | <em>In Progress (Expected Graduation July 2029)</em></p>
-                    <ul><li><b>Relevant Coursework:</b> Introduction to Computer Science, Scripting and Programming - Foundations, Data Management - Foundations, Applied Probability and Statistics, Calculus I, Web Development Foundations.</li></ul>
+body {
+    background-color: var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: groove;
+    border-color: var(--color3);
+    border-width: 5px;
+}
 
-                </article>
-            </section>
-        </main> 
+p, li, span, strong {
+    color: var(--color5);
+}
+.center {
+    text-align: center;
+}
 
-        <footer>
-            <p>Dakota Moreno</p>
-            <a href="https://www.linkedin.com/in/dakota-moreno/" target="_blank">LinkedIn</a>
-        </footer>
-        
-    </body>
-</html>
+p {
+    margin: 10px 4px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid;
+}
+
+.separator {
+    font-family: monospace;
+    font-weight: 300;
+    display: inline-block;
+    transform: rotate(10deg);
+    margin: 0 5px;
+    user-select: none;
+}
+
+h1, h2, a {
+    color: var(--color4);
+}
+
+h3, h4, .separator, hr {
+    color: var(--color3)
+
+}
+
+article ul li {
+    margin: 0px 0px;
+}
+
+#phone {
+    font-style: normal;
+}
+.title {
+    color: var(--color3);
+    margin-top: 10px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.sparkle {
+    position: fixed;
+    pointer-events: none;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color2);
+    border-radius: 50%;
+    animation: sparkle-fade 0.8s forwards;
+    z-index: 9999;
+}
+
+@keyframes sparkle-fade {
+    0% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) translateY(-20px);
+        opacity: 0;
+    }
+}
