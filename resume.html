@@ -48,15 +48,45 @@
                 </article>
             </section>
             <hr>
-            <section>
-                <h2>SKILLS & EXPERTISE</h2>
-                <ul>
-                    <li><b>Programming & Data Analysis:</b> Python (Personal Projects & Coursework), Power BI, Microsoft Office Suite (Advanced Excel & Macros, PowerPoint), Data Reporting & Analysis.</li>
-                    <li><b>FedEx Proprietary Systems:</b> Field Web Reporting (FWR), Dispatch Reporting System (DRS), Dispatch System Manager (DSM), FedEx Route Optimization (FRO), Enterprise Operational Portal (eOPS), Dispatch Workstations (DWS), Bluezone Mainframe/LSSI, CEBS Case System, Ground Pickup Information (GPI), CPCS, Schedule A, Ops Scheduler, ROADS, GDP Sims.</li>
-                    <li><b>Project & Workflow Management:</b> Google Project Management Frameworks, Time Management, Resource Allocation, Scope & Deadline Management, Problem Solving.</li>
-                    <li><b>Leadership & Communication:</b> Data Presentation, Technical Training, Cross-functional Communication, Conflict Resolution, Stakeholder Management.</li>
-                </ul>
-            </section>
+            <div>                
+                <table>
+                    <caption>SKILLS & EXPERTISE</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="blank-header"></th>
+                            <th scope="col" colspan="1">Advanced</th>
+                            <th scope="col" colspan="1">Proficient</th>
+                            <th scope="col" colspan="1">Foundational</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Programming</th>
+                            <td>Microsoft Office Suite <em>(Advanced Excel & Macros, PowerPoint, ETC.)</em></td>
+                            <td>Power BI</td>
+                            <td>Python, HTML, CSS, Javascript</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Data Analysis</th>
+                            <td>Operational Reporting</td>
+                            <td>Trend Identification</td>
+                            <td>Relational Databases <em>(SQL)</em>, Statistical Analysis</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Project & Workflow Management</th>
+                            <td>Time Management, Scope & Deadline Management, Problem Solving</td>
+                            <td>Resource Allocation</td>
+                            <td>Google Project Management Frameworks</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Leadership & Communication</th>
+                            <td>Conflict Resolution, Cross-functional Communication</td>
+                            <td>Stakeholder Management</td>
+                            <td>Data Presentation</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
             <hr>
             <section>
                 <h2>PROFESSIONAL EXPERIENCE</h2>
@@ -88,10 +118,18 @@
             <p>Dakota Moreno <span class="separator">|</span> <a class="sparkler" href="https://www.linkedin.com/in/dakota-moreno/" target="_blank">LinkedIn</a></p>
             <p>
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
                 </a>
             </p>
+            <div id="date-time"></div>            
         </footer>
+        <script>
+            const date_time = new Date();
+            document.getElementById("date-time").innerHTML = date_time.toLocaleDateString();
+        </script>
+        <script>
+            console.log("An appropriate message or value")
+        </script>
         <script>
             const links = document.querySelectorAll('.sparkler');
 
