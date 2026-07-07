@@ -8,6 +8,7 @@
     --color3: #5D7B71;
     --color4: #478B74;
     --color5: #172822;
+    --markcol: #D4B16A;
 }
 
 a {
@@ -57,7 +58,7 @@ hr {
     user-select: none;
 }
 
-h1, h2, a {
+h1, h2, a, caption {
     color: var(--color4);
 }
 
@@ -102,6 +103,55 @@ article ul li {
     }
 }
 
+mark {
+    background-color: var(--markcol);
+}
+
+table, th, td {
+    border: 2px solid var(--color2);
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    font-variant: small-caps;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 75%;
+}
+
+caption {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.blank-header {
+    background-color: #B7735A;
+    color: #5D7B71;
+    position: relative;
+    overflow: hidden;
+}
+
+.blank-header::after {
+    content: "~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ";
+    position: absolute;
+    left: 0%;
+    top: -50%;
+    opacity: 75%;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
 .temp-pic {
     display: flex;
     justify-content: center;
@@ -111,4 +161,8 @@ article ul li {
 img {
     max-width: 35%;
     height: auto;
+}
+
+.letter-p {
+    text-indent: 2em;
 }
