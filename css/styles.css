@@ -172,3 +172,113 @@ img {
 .letter-p {
     text-indent: 2em;
 }
+
+#resetBtn, #submitBtn {
+    padding: 5px;    
+    font-weight: 725;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #cb7f64;
+}
+
+#submitBtn {
+    background-color: #21b57a;
+}
+
+.form-container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+    color: var(--color5);
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+form, #formHeader {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+input[type=text]:focus, input[type=email]:focus, input[type=phone]:focus {
+    outline: none;
+    border: 3px solid var(--color3);
+    border-radius: 5px;
+    background-color: #fbf6f4;
+}
+
+#coverLetterHeader, #coverLetterSig {
+    padding-left: 5px;
+    color: var(--color5);
+    font-size: medium;
+    font-weight: 100;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+textarea:focus {
+    outline: none;
+    border: 3px solid var(--color3);
+    border-radius: 5px;
+}
+
+.button {
+    border-radius: 8px;
+    box-shadow: 0 7px #999;
+}
+
+.button:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#resetBtn:hover {
+    background-color: #9d634e;
+}
+
+#submitBtn:hover {
+    background-color: #167851;
+}
+
+input[type=radio] {
+    accent-color: var(--color5);
+    margin-bottom: 10px;
+}
+
+legend {
+    font-weight: 700;
+    text-align: center;
+    border: solid var(--color5);
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 2px solid var(--color2);
+    border-radius: 4px;
+}
+
+#messageBox {
+    margin-top: 5px;
+}
+
+#contMethodContainer {
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+#messageBoxCont {
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
