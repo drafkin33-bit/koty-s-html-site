@@ -26,23 +26,66 @@
         </nav>
         
         <main>
-            <div class="temp-pic">
-                <img src="images/pardon-dust.avif">
-            </div>
-            <section>
-                
-            </section>
 
-            <article>
-                <!--add an article here-->
-            </article>
-        </main> 
+            <h2 id="formHeader">Forms</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <!--<div class="form-container">-->
+                    <div class="form-item">
+                        <label for="firstName">First Name:<br>
+                            <input type="text" name="firstName" id="firstName" placeholder="John">
+                        </label>
+                    </div>
+                    <div class="form-item">   
+                        <label for="lastName">Last Name:<br>
+                            <input type="text" name="lastName" id="lastName" placeholder="Smith">
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <label for="companyName">Company Name:<br>
+                            <input type="text" name="companyName" id="companyName" placeholder="XYZ Enterprises">
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <label for="emailAddress">Email Address:<br>
+                            <input type="email" name="emailAddress" id="emailAddress" placeholder="john.smith@gmail.com">
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <label for="phoneNumber">Phone Number:<br>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="(123) 453-7890">
+                        </label>
+                    </div>
+                    <!--</div>-->
+                    
+                    <fieldset>
+                        <legend>Best Contact Time</legend>
+                        <input type="radio" name="contactTime" id="contactTimeAny" value="any" checked><label for="contactTimeAny">Anytime</label>
+                        <input type="radio" name="contactTime" id="contactTimeMorning" value="a.m."><label for="contactTimeMorning">A.M.</label>
+                        <input type="radio" name="contactTime" id="contactTimeAfternoon" value="p.m."><label for="contactTimeMorning">P.M.</label>
+                    </fieldset>
+                    <label for="messageBox" id="messageBoxCont">Message<br>
+                        <textarea id="messageBox" name="messageBox" placeholder="Leave a message for Dakota here."></textarea>
+                    </label>
+                    <label for="contactMethod" id="contMethodContainer">Best Contact Method<br>
+                        <select name="contactMethod" id="contactMethod">
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                        </select>
+                    </label>
+                <!--</div>-->
+                <div class="form-buttons">
+                    <input class="button" type="reset" name="resetBtn" id="resetBtn" value="Reset Form">
+                    <input class="button" type="submit" name="submitBtn" id="submitBtn" value="Submit Form">
+                </div>
+            </form>
+        </main>
 
         <footer class="center">
             <p>Dakota Moreno <span class="separator">|</span> <a href="https://www.linkedin.com/in/dakota-moreno/" target="_blank">LinkedIn</a></p>
             <p>
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
                 </a>
             </p>
         </footer>
