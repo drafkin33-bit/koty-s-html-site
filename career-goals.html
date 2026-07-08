@@ -76,7 +76,7 @@
                 <!--</div>-->
                 <div class="form-buttons">
                     <input class="button" type="reset" name="resetBtn" id="resetBtn" value="Reset Form">
-                    <input class="button" type="submit" name="submitBtn" id="submitBtn" value="Submit Form">
+                    <input class="button" type="submit" name="submitBtn" id="submitBtn" value="Submit Form" onclick="wooshFunction()">
                 </div>
             </form>
         </main>
@@ -89,5 +89,20 @@
                 </a>
             </p>
         </footer>
+        <section>
+            <h2>Reference(s)</h2>
+            <ul>
+                <li>
+                    Audio file: <cite><a href="https://freesound.org/people/AudioPapkin/sounds/812649/">Sound Design Elements Whoosh SFX 014</a> by <a href="https://freesound.org/people/AudioPapkin/">AudioPapkin</a> | License: <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0</a></cite>
+                </li>
+            </ul>
+        </section>
+        <audio id="submitSound" src="media\812649__audiopapkin__sound-design-elements-whoosh-sfx-014.wav" preload="auto"></audio> <!--sound file for src here--> 
+        <script>
+            function wooshFunction() {
+                const sound = document.getElementById('submitSound');
+                sound.play();
+            }
+        </script>
     </body>
 </html>
