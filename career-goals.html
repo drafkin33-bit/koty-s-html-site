@@ -11,7 +11,7 @@
 
     </head>
 
-    <body>
+    <body id="careerGoalsBody" style="background-image: url('images/custom-tile.png')">
     
         <header class="center">
             <h1>Dakota Moreno</h1>
@@ -24,7 +24,11 @@
             <a href="resume.html">Resume</a> <span class="separator">|</span>
             <a href="career-goals.html">Career Goals</a>
         </nav>
-        
+        <div class="videoContainer">
+            <video controls >
+                <source src="media/career-goals PPT.mp4" type="video/mp4">
+            </video>
+        </div>
         <main>
 
             <h2 id="formHeader">Contact Form</h2>
@@ -61,7 +65,7 @@
                         <legend>Best Contact Time</legend>
                         <input type="radio" name="contactTime" id="contactTimeAny" value="any" checked><label for="contactTimeAny">Anytime</label>
                         <input type="radio" name="contactTime" id="contactTimeMorning" value="a.m."><label for="contactTimeMorning">A.M.</label>
-                        <input type="radio" name="contactTime" id="contactTimeAfternoon" value="p.m."><label for="contactTimeMorning">P.M.</label>
+                        <input type="radio" name="contactTime" id="contactTimeAfternoon" value="p.m."><label for="contactTimeAfternoon">P.M.</label>
                     </fieldset>
                     <label for="messageBox" id="messageBoxCont">Message<br>
                         <textarea id="messageBox" name="messageBox" placeholder="Leave a message for Dakota here."></textarea>
@@ -79,8 +83,22 @@
                     <input class="button" type="submit" name="submitBtn" id="submitBtn" value="Submit Form"> <!-- onclick="wooshFunction()"-->
                 </div>
             </form>
-        </main>
-
+        </main>        
+        <div id="profileContainer">
+            <h3>Meet the Candidate</h3><br>
+            <img src="images/me.png" alt="A picture of Dakota Moreno smiling."> 
+        </div>
+        <section>
+            <h2>Reference(s)</h2>
+            <ul>
+                <li>
+                    Audio file: <cite><a href="https://freesound.org/people/AudioPapkin/sounds/812649/">Sound Design Elements Whoosh SFX 014</a> by <a href="https://freesound.org/people/AudioPapkin/">AudioPapkin</a> | License: <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0</a></cite>
+                </li>                
+                <li>
+                    Video background music: Music track: Last Summer by Aylex, Source: <a href="https://freetouse.com/music" target="_blank">https://freetouse.com/music</a>, Vlog Music for Videos (Free Download)
+                </li>
+            </ul>
+        </section>
         <footer class="center">
             <p>Dakota Moreno <span class="separator">|</span> <a href="https://www.linkedin.com/in/dakota-moreno/" target="_blank">LinkedIn</a></p>
             <p>
@@ -89,14 +107,6 @@
                 </a>
             </p>
         </footer>
-        <section>
-            <h2>Reference(s)</h2>
-            <ul>
-                <li>
-                    Audio file: <cite><a href="https://freesound.org/people/AudioPapkin/sounds/812649/">Sound Design Elements Whoosh SFX 014</a> by <a href="https://freesound.org/people/AudioPapkin/">AudioPapkin</a> | License: <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0</a></cite>
-                </li>
-            </ul>
-        </section>
         <audio id="submitSound" src="media/812649__audiopapkin__sound-design-elements-whoosh-sfx-014.wav" preload="auto"></audio> <!--sound file for src here--> 
         <script>
             const form = document.getElementById('contactForm');
