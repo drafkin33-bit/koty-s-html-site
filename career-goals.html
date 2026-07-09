@@ -28,7 +28,7 @@
         <main>
 
             <h2 id="formHeader">Contact Form</h2>
-            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+            <form id="contactForm" action="https://wp.zybooks.com/form-viewer.php" method="post">
                 <!--<div class="form-container">-->
                     <div class="form-item">
                         <label for="firstName">First Name:<br>
@@ -76,7 +76,7 @@
                 <!--</div>-->
                 <div class="form-buttons">
                     <input class="button" type="reset" name="resetBtn" id="resetBtn" value="Reset Form">
-                    <input class="button" type="submit" name="submitBtn" id="submitBtn" value="Submit Form" onclick="wooshFunction()">
+                    <input class="button" type="submit" name="submitBtn" id="submitBtn" value="Submit Form"> <!-- onclick="wooshFunction()"-->
                 </div>
             </form>
         </main>
@@ -97,12 +97,18 @@
                 </li>
             </ul>
         </section>
-        <audio id="submitSound" src="media\812649__audiopapkin__sound-design-elements-whoosh-sfx-014.wav" preload="auto"></audio> <!--sound file for src here--> 
+        <audio id="submitSound" src="media/812649__audiopapkin__sound-design-elements-whoosh-sfx-014.wav" preload="auto"></audio> <!--sound file for src here--> 
         <script>
-            function wooshFunction() {
-                const sound = document.getElementById('submitSound');
+            const form = document.getElementById('contactForm');
+            const sound = document.getElementById('submitSound');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
                 sound.play();
-            }
+                setTimeout(function() {
+                    form.submit();
+                }, 1250)
+            });                        
         </script>
     </body>
 </html>
