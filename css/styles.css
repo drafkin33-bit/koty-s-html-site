@@ -26,6 +26,10 @@ body {
     border-width: 5px;
 }
 
+main {
+    padding: 0 20px;
+}
+
 a {
     transition: color 0.3s ease;
     color: var(--text-accent);
@@ -37,8 +41,9 @@ a:hover {
 
 ul {
     font-size: 0.875rem;
-    padding-left: 10px;
+    padding-left: 25px;
     list-style-type: square;
+    margin-bottom: 15px;
 }
 
 p, li, span, strong {
@@ -56,6 +61,7 @@ p {
 hr {
     border: none;
     border-top: 2px solid var(--accent-secondary);
+    margin: 15px 0;
 }
 
 .separator {
@@ -74,6 +80,22 @@ h1, h2, caption {
 
 h3, h4 {
     color: var(--accent-secondary);
+}
+
+h2 {
+    margin: 15px 0 10px 0;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+article {
+    margin-bottom: 15px;
 }
 
 article ul li {
